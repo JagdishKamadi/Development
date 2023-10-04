@@ -1,0 +1,18 @@
+<%@page import="com.epam.quiz.service.QuestionValidationServiceImpl"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@page import="java.util.List"%>
+   <%@page import="com.epam.quiz.model.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Display question</title>
+</head>
+<body>
+   <c:forEach var="item" items="${sectionlistquestion}">
+		<h4><c:out value="${item.questionId})   ${item.questionDescription}   [ ${item.questionTag.questionTopicTag} |  ${item.questionTag.questionDifficultyTag}]"></c:out></h4>
+	</c:forEach>
+</body>
+</html>

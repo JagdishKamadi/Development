@@ -1,0 +1,50 @@
+http://localhost:8080/
+
+1) for saving question 
+
+{
+        
+        "questionDescription": "Hibernate SessionFactory represent which level of cache?",
+        "option1": "Second Level",
+        "option2": "Third Level",
+        "option3": "First Level",
+        "option4": "Fourth Level",
+        "answer": "A",
+        "sectionTag": "ADVANCE_JAVA",
+        "section": {
+            "topicTag": "SPRING",
+            "difficultyTag": "MEDIUM"
+        }
+}
+
+
+
+
+
+----------------------------------------------------------------------------------
+
+
+2) for user login
+{
+    "username" : "Madhur",
+    "password" : "Madhur@99"
+}
+
+
+----------------------------------------------------------------------------------
+
+3) for creating new user
+
+{
+    "username" : "Akash",
+    "mailId"   : "akash@gmail.com",
+    "password" : "Akash@99"
+}
+
+----------------------------------------------------------------------------------
+
+{
+    "username" : "Admin",
+    "typeOfUser" : 1,
+    "password" : "Admin@00"
+}

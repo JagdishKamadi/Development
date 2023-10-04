@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> <!-- bean definitions here -->
+
+    <bean class="org.epam.model.Student" name="student1">
+        <property name="id">
+            <value>1</value>
+        </property>
+        <property name="name">
+            <value>Jagdish Kamadi</value>
+        </property>
+        <property name="age">
+            <value>21</value>
+        </property>
+    </bean>
+
+    <bean class="org.epam.model.Student" name="student2">
+        <property name="id" value="2"/>
+        <property name="name" value="Jogeshwari"/>
+        <property name="age" value="22"/>
+    </bean>
+
+    <bean class="org.epam.model.Address" name="myAddress">
+        <property name="id" value="1"/>
+        <property name="currentAddress">
+            <list>
+                <value>At-Pawani</value>
+                <value>Post-Sirasgaon</value>
+                <value>T-Hinganghat</value>
+                <value>Dist-Wardha</value>
+            </list>
+        </property>
+        <property name="pincode">
+            <set>
+                <value>442304</value>
+                <value>442001</value>
+            </set>
+        </property>
+        <property name="phoneNumbers">
+            <map>
+                <entry key="MyHomeNumber" value="8975062676"/>
+                <entry key="MyOfficeNumber" value="7745824763"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- To import the other config file-->
+    <import resource="refconfig.xml"/>
+</beans>

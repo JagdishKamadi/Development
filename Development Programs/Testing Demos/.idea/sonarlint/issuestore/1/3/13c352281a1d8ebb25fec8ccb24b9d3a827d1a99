@@ -1,0 +1,19 @@
+
+J
+java:S3740\"/Provide the parametrized type for this generic.(Á©±åúÿÿÿÿ
+^
+java:S1192"HDefine a constant instead of duplicating this literal "Jagdish" 9 times.(Õû¦Ş
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬«·üÿÿÿÿ
+c	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¦ŸÑ
+A
+java:S1602%",Remove useless curly braces around statement(÷È
+b	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã§Ô'
+h	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¿„ üÿÿÿÿ
+a	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìŠK
+h	java:S100V"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃûÛÈùÿÿÿÿ
+N
+java:S1874]"3Remove this use of "newInstance"; it is deprecated.(¾×Øáùÿÿÿÿ
+B
+java:S3011_",This accessibility update should be removed.(Ó«§¯
+L
+java:S1144A"1Remove this unused private "getAllValues" method.(°ÿŠéøÿÿÿÿ

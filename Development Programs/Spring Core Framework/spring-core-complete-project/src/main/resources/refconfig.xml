@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> <!-- bean definitions here -->
+
+    <bean class="org.epam.ref.Department" name="department">
+        <property name="deptId" value="1"/>
+        <property name="deptName" value="Computer Engineering"/>
+    </bean>
+
+    <bean class="org.epam.ref.Employee" name="employee">
+        <property name="empId" value="1"/>
+        <property name="empName" value="Jagdish Kamadi"/>
+        <property name="department" ref="department"/>
+    </bean>
+</beans>
