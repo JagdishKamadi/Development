@@ -43,7 +43,10 @@ public class Main {
 
         // constructor base config
         System.out.println("\nConstructor base bean");
-        Person person = context.getBean("person", Person.class);
+        Person person = context.getBean("person2", Person.class);
         System.out.println(person);
+        // checking for nested static class
+        Person.RichPerson richPerson = context.getBean("richPerson", Person.RichPerson.class);
+        System.out.println(richPerson);
     }
 }

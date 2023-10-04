@@ -15,7 +15,6 @@ public class Person {
     }
 
 
-
     @Override
     public String toString() {
         return "Person{" +
@@ -23,5 +22,20 @@ public class Person {
                 ", personName='" + personName + '\'' +
                 ", car=" + car +
                 '}';
+    }
+
+    public static class RichPerson {
+        private String personName;
+
+        public RichPerson(String personName) {
+            this.personName = personName;
+        }
+
+        @Override
+        public String toString() {
+            return "RichPerson{" +
+                    "personName='" + personName + '\'' +
+                    '}';
+        }
     }
 }

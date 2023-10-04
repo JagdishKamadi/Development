@@ -15,9 +15,18 @@
         </constructor-arg>
     </bean>
 
-    <bean class="org.epam.model.Person" name="person">
+    <!--    We can same bean with other name-->
+
+    <bean class="org.epam.model.Person" name="person,person2">
         <constructor-arg value="1" type="Integer"/>
         <constructor-arg value="Jagdish Kamadi"/>
         <constructor-arg ref="car"/>
     </bean>
+
+    <!--    This is bean for static nested class-->
+    <bean id ="richPerson" class="org.epam.model.Person.RichPerson">
+        <constructor-arg value="Jagdish Kamadi"/>
+    </bean>
+
+
 </beans>
