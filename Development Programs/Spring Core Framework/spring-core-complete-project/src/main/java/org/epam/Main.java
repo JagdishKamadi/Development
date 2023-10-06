@@ -13,11 +13,10 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
-        /** This is the feature of java 10+version
-         *
-         * */
+//        This is the feature of java 10+version
+
         var context =
-                new ClassPathXmlApplicationContext(new String[]{"propertybaseconfig.xml", "refconfig.xml", "constructorbaseconfig.xml"});
+        new ClassPathXmlApplicationContext(new String[]{"propertybaseconfig.xml", "refconfig.xml", "constructorbaseconfig.xml"});
 
 
         LOGGER.info("\nSample log4j message\n");
@@ -50,3 +49,4 @@ public class Main {
         System.out.println(richPerson);
     }
 }
+
