@@ -7,6 +7,10 @@ import org.epam.model.Student;
 import org.epam.ref.Employee;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * This project is based on xml application in spring core
+ * later on we discuss the about the annotation based project
+ */
 public class Main {
 
     //Apache log4 demo
