@@ -16,7 +16,7 @@ public class Main {
 //        This is the feature of java 10+version
 
         var context =
-        new ClassPathXmlApplicationContext(new String[]{"propertybaseconfig.xml", "refconfig.xml", "constructorbaseconfig.xml"});
+                new ClassPathXmlApplicationContext(new String[]{"propertybaseconfig.xml", "refconfig.xml", "constructorbaseconfig.xml"});
 
 
         LOGGER.info("\nSample log4j message\n");

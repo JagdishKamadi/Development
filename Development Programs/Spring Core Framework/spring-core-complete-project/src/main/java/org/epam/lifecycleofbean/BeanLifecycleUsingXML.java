@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 public class BeanLifecycleUsingXML {
 
     private static final Logger LOGGER = Logger.getLogger(BeanLifecycleUsingXML.class);
-    private String beanName;
+    private final String beanName;
 
     public BeanLifecycleUsingXML(String beanName) {
         this.beanName = beanName;
