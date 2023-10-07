@@ -4,14 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> <!-- bean definitions here -->
 
     <bean class="org.epam.lifecycleofbean.BeanLifecycleUsingXML" name="beanLifecycleUsingXML" init-method="init"
-          destroy-method="destroy">
+          destroy-method="destroy" lazy-init="true">
         <constructor-arg>
             <value>My bean name is beanLifecycleUsingXML</value>
         </constructor-arg>
     </bean>
 
     <bean class="org.epam.lifecycleofbean.BeanLifecycleUsingInterface"
-          name="beanLifecycleUsingInterface">
+          name="beanLifecycleUsingInterface" lazy-init="true">
         <property name="beanName" value="My bean name is My bean name is beanLifecycleUsingInterface"/>
     </bean>
 </beans>
