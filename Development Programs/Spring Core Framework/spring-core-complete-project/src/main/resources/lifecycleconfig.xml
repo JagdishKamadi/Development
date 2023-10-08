@@ -3,8 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> <!-- bean definitions here -->
 
+    <!-- By default scope is singleton,
+    that means for each new reference new object is going to be created-->
     <bean class="org.epam.lifecycleofbean.BeanLifecycleUsingXML" name="beanLifecycleUsingXML" init-method="init"
-          destroy-method="destroy" lazy-init="true">
+          destroy-method="destroy" lazy-init="true" scope="prototype">
         <constructor-arg>
             <value>My bean name is beanLifecycleUsingXML</value>
         </constructor-arg>
