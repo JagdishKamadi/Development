@@ -18,5 +18,7 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("annotationbasedconfig.xml");
         Teacher teacher = context.getBean("teacher", Teacher.class);
         LOGGER.info(teacher);
+        Teacher teacher2 = context.getBean("teacher2", Teacher.class);
+        LOGGER.info(teacher2);
     }
 }
