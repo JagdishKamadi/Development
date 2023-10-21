@@ -19,3 +19,5 @@ Qsrc/main/java/com/epam/annotation_using_java_based_using_component/Principal.ja
 Lsrc/main/java/com/epam/annotation_using_java_based_using_component/Test.java,4\c\4c389efdc98c0656c0881831540aefc974a79f23
 h
 8src/main/java/com/epam/annotation_using_xml/College.java,4\6\46ac89729c68b240d543e0f262d68e7eb23cb12b
+|
+Lsrc/main/java/com/epam/annotation_using_java_based_using_bean/Principal.java,c\2\c248b097e1071e2cc70b9bf1f6aa248ad989434b

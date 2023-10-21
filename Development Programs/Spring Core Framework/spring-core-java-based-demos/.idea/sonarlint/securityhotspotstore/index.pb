@@ -19,3 +19,5 @@ z
 Jsrc/main/java/com/epam/annotation_using_java_based_using_bean/College.java,7\2\7213039597d1bfbfde1c803e92368a2afc528edf
 h
 8src/main/java/com/epam/annotation_using_xml/College.java,4\6\46ac89729c68b240d543e0f262d68e7eb23cb12b
+|
+Lsrc/main/java/com/epam/annotation_using_java_based_using_bean/Principal.java,c\2\c248b097e1071e2cc70b9bf1f6aa248ad989434b
