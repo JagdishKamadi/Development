@@ -7,9 +7,6 @@ public class Test {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class);
         College college = context.getBean("college", College.class);
         college.sayHelloToStudent();
-
-        Teacher teacher1 = context.getBean("historyTeacher", HistoryTeacher.class);
-        teacher1.teach();
         context.close();
     }
 }
