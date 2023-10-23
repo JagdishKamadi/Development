@@ -12,10 +12,6 @@ public class MathTeacher implements Teacher {
     private String mathTeacherName;
 
 
-    public void setMathTeacherName(String mathTeacherName) {
-        this.mathTeacherName = mathTeacherName;
-    }
-
     @Override
     public void teach() {
         LOGGER.info("Hi Student I am you math teacher and my name is " + mathTeacherName);

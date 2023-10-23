@@ -25,3 +25,7 @@ R
 "spring-rest-department-app/pom.xml,3\1\31fafd253b0e14ab8e96b2b52f91d10d16389f26
 Å
 Qspring-rest-department-app/src/main/java/com/epam/controller/HelloController.java,a\0\a05db8367f3c19bcc99d427f4c3b5387ee2c4d49
+t
+Dspring-rest-department-app/src/main/resources/application.properties,c\c\cc3b2aac837a122946b622329d9be8c86df81388
+é
+^spring-rest-department-app/src/test/java/com/epam/SpringRestDepartmentAppApplicationTests.java,8\c\8cef2cde8e348e3638d91d8f366406ce87df6d1d
