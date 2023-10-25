@@ -49,3 +49,7 @@ r
 Bsrc/main/java/com/epam/annotation_using_java_based_mixed/Test.java,8\5\85bb7619a12cc0c06a435efcaca9853923492e19
 u
 Esrc/main/java/com/epam/annotation_using_java_based_mixed/College.java,e\e\ee687a26c4ff8a8bbe64feb85b03ed327e9a1365
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
