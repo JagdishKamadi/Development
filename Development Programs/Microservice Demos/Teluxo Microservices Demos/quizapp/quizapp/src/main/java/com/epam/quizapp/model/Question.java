@@ -1,7 +1,5 @@
 package com.epam.quizapp.model;
 
-import com.epam.quizapp.utility.enm.Category;
-import com.epam.quizapp.utility.enm.Level;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +18,8 @@ public class Question {
     private String option2;
     private String option3;
     private String option4;
-    private Level level;
-    private Category category;
+    private String answer;
+    private String level;
+    private String category;
 
 }
