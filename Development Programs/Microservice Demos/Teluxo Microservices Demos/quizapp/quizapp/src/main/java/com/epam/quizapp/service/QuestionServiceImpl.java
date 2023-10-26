@@ -17,6 +17,22 @@ public class QuestionServiceImpl implements QuestionService {
 
 
     @Override
+    public ResponseEntity<Question> saveQuestion(Question question) {
+        return new ResponseEntity<>(questionRepository.save(question), HttpStatus.CREATED);
+    }
+
+    @Override
+    public ResponseEntity<List<Question>> saveQuestions(List<Question> questions) {
+        return new ResponseEntity<>(questionRepository.saveAll(questions), HttpStatus.CREATED);
+    }
+
+    @Override
+    public ResponseEntity<HttpStatus> deleteQuestion(Integer id) {
+        questionRepository.deleteById(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    @Override
     public ResponseEntity<Question> getQuestion(Integer id) {
         return new ResponseEntity<>(questionRepository.findById(id).orElse(null), HttpStatus.OK);
     }
