@@ -1,6 +1,8 @@
 package com.epam.quizapp.service;
 
+import com.epam.quizapp.model.AnswerResponse;
 import com.epam.quizapp.model.Question;
+import com.epam.quizapp.model.QuestionWrapper;
 import com.epam.quizapp.model.Quiz;
 import com.epam.quizapp.repository.QuestionRepository;
 import com.epam.quizapp.repository.QuizRepository;
@@ -11,6 +13,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 @Slf4j
@@ -36,7 +40,48 @@ public class QuizServiceImpl implements QuizService {
     }
 
     @Override
-    public ResponseEntity<Quiz> getQuiz(String quizTitle) {
-        return new ResponseEntity<>(quizRepository.findByQuizTitle(quizTitle), HttpStatus.OK);
+    public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(Integer id) {
+        Quiz quiz = quizRepository.findById(id).orElse(null);
+        List<QuestionWrapper> transformQuestionsList = new ArrayList<>();
+
+        quiz.getQuestions().stream()
+                .forEach(q -> {
+                    QuestionWrapper questionWrapper = new QuestionWrapper();
+                    questionWrapper.setId(q.getId());
+                    questionWrapper.setQuestionTitle(q.getQuestionTitle());
+                    questionWrapper.setOption1(q.getOption1());
+                    questionWrapper.setOption2(q.getOption2());
+                    questionWrapper.setOption3(q.getOption3());
+                    questionWrapper.setOption4(q.getOption4());
+                    transformQuestionsList.add(questionWrapper);
+                });
+
+        return new ResponseEntity<>(transformQuestionsList, HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<Integer> submitQuizAndGetScore(Integer id, List<AnswerResponse> responses) {
+        Quiz quiz = quizRepository.findById(id).orElse(null);
+        List<Question> exceptedAnswerOfQuestion = quiz.getQuestions();
+        Integer score = 0;
+        int i = 0;
+
+        // first of all we have tp sort the exceptedAnswerOfQuestion and responses based on id
+        responses = responses.stream()
+                .sorted(Comparator.comparing(AnswerResponse::getId))
+                .toList();
+
+        exceptedAnswerOfQuestion = exceptedAnswerOfQuestion.stream()
+                .sorted(Comparator.comparing(Question::getId))
+                .toList();
+
+        for (AnswerResponse answerResponse : responses) {
+            if (exceptedAnswerOfQuestion.get(i).getAnswer().equals(answerResponse.getAnswerOption())) {
+                score++;
+            }
+            i++;
+        }
+
+        return new ResponseEntity<>(score, HttpStatus.OK);
     }
 }
