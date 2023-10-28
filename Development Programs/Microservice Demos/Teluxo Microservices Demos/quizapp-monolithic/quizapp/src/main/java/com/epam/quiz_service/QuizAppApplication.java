@@ -1,26 +1,35 @@
-package com.epam;
+package com.epam.quiz_service;
 
-import com.epam.questionservice.repository.QuestionRepository;
-import com.epam.questionservice.utility.GreetingService;
-import lombok.extern.slf4j.Slf4j;
+import com.epam.quiz_service.repository.QuestionRepository;
+import com.epam.quiz_service.utility.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@Slf4j
-public class QuestionServiceApplication/* implements CommandLineRunner*/ {
+public class QuizAppApplication /*implements CommandLineRunner */ {
 
     @Autowired
     private QuestionRepository questionRepository;
 
     public static void main(String[] args) {
-        var context = SpringApplication.run(QuestionServiceApplication.class, args);
+        var context = SpringApplication.run(QuizAppApplication.class, args);
         GreetingService greetingService = context.getBean("greeting", GreetingService.class);
         greetingService.welcomeUser();
     }
 
-   /* @Override
+/**
+ * Interface
+ * CommandLineRunner
+ * <p>
+ * Description
+ * Spring Boot will automatically call the run method of
+ * all beans implementing this interface after the application context has been loaded.
+ *
+ * @param args
+ * @throws Exception
+ */
+    /*@Override
     public void run(String... args) throws Exception {
         List<Question> questionList = new ArrayList<>();
 
@@ -91,6 +100,6 @@ public class QuestionServiceApplication/* implements CommandLineRunner*/ {
         questionList.add(question6);
 
         questionRepository.saveAll(questionList);
-    }*/
-
+    }
+*/
 }
