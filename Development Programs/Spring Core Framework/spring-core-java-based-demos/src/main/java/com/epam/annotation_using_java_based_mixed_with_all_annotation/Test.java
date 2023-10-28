@@ -1,4 +1,4 @@
-package com.epam.annotation_using_java_based_mixed;
+package com.epam.annotation_using_java_based_mixed_with_all_annotation;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
