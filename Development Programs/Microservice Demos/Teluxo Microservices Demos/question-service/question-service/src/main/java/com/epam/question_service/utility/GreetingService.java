@@ -8,13 +8,13 @@ import org.springframework.stereotype.Component;
 @Component(value = "greeting")
 public class GreetingService {
 
-    @Value("${server.port:8080}")
+    @Value("${port.number:8080}")
     private String portNumber;
 
-    @Value("${user.name:Admin}")
+    @Value("${user.name:'Admin'}")
     private String userName;
 
     public void welcomeUser() {
-        log.info(String.format("Welcome %s, Application has been started at port number %s.", userName, portNumber));
+        log.info(String.format("Welcome %s, port has been started at port number %s.", userName, portNumber));
     }
 }
