@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component(value = "greeting")
 public class GreetingService {
 
-    @Value("${port.number}")
+    @Value("${port.number:8080}")
     private String portNumber;
 
     @Value("${user.name:'Admin'}")
