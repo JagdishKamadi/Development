@@ -17,8 +17,10 @@ public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+    private String category;
     private String quizTitle;
 
-    @ManyToMany
-    private List<Question> questions;
+    // to store the collection type
+    @ElementCollection
+    private List<Integer> questionsIds;
 }

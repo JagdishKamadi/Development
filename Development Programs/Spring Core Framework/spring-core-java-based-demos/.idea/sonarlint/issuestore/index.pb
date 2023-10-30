@@ -55,3 +55,5 @@ bsrc/main/java/com/epam/annotation_using_java_based_mixed_with_all_annotation/Ot
 Vsrc/main/java/com/epam/annotation_using_java_based_mixed_with_all_annotation/Test.java,9\6\9637ec973bf6aaa86de7c3a03c4f500d67ebb7dc
 î
 dsrc/main/java/com/epam/annotation_using_java_based_mixed_with_all_annotation/ConfigurationClass.java,e\0\e03721f23f0d182885425f8fcb1dcfbc4617ad26
+ç
+]src/main/java/com/epam/annotation_using_java_based_mixed_with_all_annotation/JavaTeacher.java,0\4\043621e6cba7c9899b0d74b3fbf86051094359f3

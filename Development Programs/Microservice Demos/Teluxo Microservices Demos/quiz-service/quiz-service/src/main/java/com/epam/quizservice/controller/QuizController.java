@@ -3,6 +3,7 @@ package com.epam.quizservice.controller;
 
 import com.epam.quizservice.model.AnswerResponse;
 import com.epam.quizservice.model.QuestionWrapper;
+import com.epam.quizservice.model.Quiz;
 import com.epam.quizservice.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,15 +24,15 @@ public class QuizController {
         return quizService.createQuiz(category, numberOfQuestions, title);
     }
 
-    @GetMapping("getQuiz/{id}")
-    public ResponseEntity<List<QuestionWrapper>> getQuiz(@PathVariable Integer id) {
-        return quizService.getQuizQuestions(id);
+    @GetMapping("getQuiz/{title}")
+    public ResponseEntity<List<QuestionWrapper>> getQuiz(@PathVariable String title) {
+        return quizService.getQuizQuestions(title);
     }
 
 
-    @PostMapping("submit/{id}")
-    public ResponseEntity<Integer> submitQuiz(@PathVariable Integer id, @RequestBody List<AnswerResponse> responses) {
-        return quizService.submitQuizAndGetScore(id, responses);
+    @PostMapping("submit/{quizTitle}")
+    public ResponseEntity<Long> submitQuiz(@PathVariable String quizTitle, @RequestBody List<AnswerResponse> responses) {
+        return quizService.submitQuizAndGetScore(quizTitle, responses);
     }
 
 }
