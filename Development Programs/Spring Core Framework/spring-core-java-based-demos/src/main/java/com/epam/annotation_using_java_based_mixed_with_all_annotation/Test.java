@@ -7,9 +7,11 @@ public class Test {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationClass.class, OtherConfigClass.class);
         College college = context.getBean("college", College.class);
         college.sayHelloToStudent();
+
         // below example shows using the @Import annotation
         Teacher scienceTeacherBean = context.getBean("scienceTeacher", ScienceTeacher.class);
         scienceTeacherBean.teach();
+
         context.close();
     }
 }

@@ -35,6 +35,16 @@ public class College {
     private Teacher scienceTeacherBean;
 
     /**
+     * Below is the example with
+     *
+     * @Bean
+     * @Autowired both of mixture configuration
+     */
+    @Autowired
+    @Qualifier("scienceTeacherBean")
+    private Teacher javaTeacherBean;
+
+    /**
      * we are using here the @Qualifier annotation
      * make sure to use the @Autowired annotation
      */
@@ -63,9 +73,11 @@ public class College {
         logger.info(mathTeacherBean);
         logger.info(scienceTeacherBean);
         logger.info(englishTeacherBean);
+        logger.info(javaTeacherBean+"Bean Type");
         historyTeacherBean.teach();
         mathTeacherBean.teach();
         scienceTeacherBean.teach();
         englishTeacherBean.teach();
+        javaTeacherBean.teach();
     }
 }
