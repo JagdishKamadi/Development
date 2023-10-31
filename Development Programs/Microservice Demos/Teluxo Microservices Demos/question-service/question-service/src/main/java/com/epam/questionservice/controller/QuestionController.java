@@ -4,7 +4,9 @@ import com.epam.questionservice.model.AnswerResponse;
 import com.epam.questionservice.model.Question;
 import com.epam.questionservice.model.QuestionWrapper;
 import com.epam.questionservice.service.QuestionService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,10 +15,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "question")
+@Slf4j
 public class QuestionController {
 
     @Autowired
     private QuestionService questionService;
+
+    // This is to get the environment variables
+    @Autowired
+    private Environment environment;
 
     @PostMapping(value = {"save/question"})
     public ResponseEntity<Question> saveQuestion(@RequestBody Question question) {
@@ -60,6 +67,8 @@ public class QuestionController {
 
     @PostMapping("getQuestions")
     public ResponseEntity<List<QuestionWrapper>> getQuestionsById(@RequestBody List<Integer> questionsId) {
+        // if we are running on multiple port then we are checking on which port we are running the service
+        log.info("Port Number {}", environment.getProperty("local.server.port"));
         return questionService.getQuestionsById(questionsId);
     }
 
