@@ -52,12 +52,12 @@ public class QuestionController {
 
     @GetMapping("/category/{category}")
     public ResponseEntity<List<Question>> getQuestionByCategory(@PathVariable String category) {
-        return questionService.findByCategory(category);
+        return questionService.getQuestionsByCategory(category);
     }
 
     @GetMapping("/category/{category}/level/{level}")
     public ResponseEntity<List<Question>> getQuestionByCategoryAndLevel(@PathVariable String category, @PathVariable String level) {
-        return questionService.findByCategoryAndLevel(category, level);
+        return questionService.getQuestionsByCategoryAndLevel(category, level);
     }
 
     @PostMapping("create")

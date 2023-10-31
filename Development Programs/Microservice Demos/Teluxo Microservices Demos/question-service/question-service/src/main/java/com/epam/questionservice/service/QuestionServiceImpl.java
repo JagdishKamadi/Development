@@ -9,7 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -48,12 +47,12 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
-    public ResponseEntity<List<Question>> findByCategory(String category) {
+    public ResponseEntity<List<Question>> getQuestionsByCategory(String category) {
         return new ResponseEntity<>(questionRepository.findByCategory(category), HttpStatus.OK);
     }
 
     @Override
-    public ResponseEntity<List<Question>> findByCategoryAndLevel(String category, String level) {
+    public ResponseEntity<List<Question>> getQuestionsByCategoryAndLevel(String category, String level) {
         return new ResponseEntity<>(questionRepository.findByCategoryAndLevel(category, level), HttpStatus.OK);
     }
 
@@ -64,20 +63,11 @@ public class QuestionServiceImpl implements QuestionService {
 
     @Override
     public ResponseEntity<List<QuestionWrapper>> getQuestionsById(List<Integer> questionsId) {
+        // convert the question to QuestionWrapper here
+        List<QuestionWrapper> questionWrapperList = questionRepository.findAllById(questionsId).stream()
+                .map(QuestionWrapper::new)
+                .toList();
 
-        List<QuestionWrapper> questionWrapperList = new ArrayList<>();
-        questionRepository.findAllById(questionsId).stream()
-                .forEach(q -> {
-                    QuestionWrapper questionWrapper = new QuestionWrapper();
-                    questionWrapper.setId(q.getId());
-                    questionWrapper.setQuestionTitle(q.getQuestionTitle());
-                    questionWrapper.setOption1(q.getOption1());
-                    questionWrapper.setOption2(q.getOption2());
-                    questionWrapper.setOption3(q.getOption3());
-                    questionWrapper.setOption4(q.getOption4());
-
-                    questionWrapperList.add(questionWrapper);
-                });
         return new ResponseEntity<>(questionWrapperList, HttpStatus.OK);
     }
 

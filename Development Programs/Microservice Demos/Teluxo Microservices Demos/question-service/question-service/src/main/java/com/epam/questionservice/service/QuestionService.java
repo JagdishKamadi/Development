@@ -21,9 +21,9 @@ public interface QuestionService {
     ResponseEntity<List<Question>> getQuestions();
 
 
-    ResponseEntity<List<Question>> findByCategory(String category);
+    ResponseEntity<List<Question>> getQuestionsByCategory(String category);
 
-    ResponseEntity<List<Question>> findByCategoryAndLevel(String category, String level);
+    ResponseEntity<List<Question>> getQuestionsByCategoryAndLevel(String category, String level);
 
     ResponseEntity<List<Integer>> generateQuestionForQuiz(String category, Integer numberOfQuestions);
 
