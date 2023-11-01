@@ -77,3 +77,7 @@ Q.idea/sonarlint/securityhotspotstore/6/8/6895d381d8bfbbe4995d00a5d9d92faa727cc2
 Q.idea/sonarlint/securityhotspotstore/8/2/829db70bc4e1638f13fe4cf913da3aa9fc33f925,5\9\59753357587fbedaaf10437b2ced41ade92d987c
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+Œ
+\question-service/src/test/java/com/epam/questionservice/service/QuestionServiceImplTest.java,2\5\2524d1df9f901e6251494a0ade2e054da476f56f
+Ž
+^question-service/src/test/java/com/epam/questionservice/controller/QuestionControllerTest.java,f\9\f9d16c6e11a84b07ebfa17c967abc60e8140a057
