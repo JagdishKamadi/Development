@@ -3,7 +3,6 @@ package com.epam.quizservice.controller;
 
 import com.epam.quizservice.model.AnswerResponse;
 import com.epam.quizservice.model.QuestionWrapper;
-import com.epam.quizservice.model.Quiz;
 import com.epam.quizservice.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
