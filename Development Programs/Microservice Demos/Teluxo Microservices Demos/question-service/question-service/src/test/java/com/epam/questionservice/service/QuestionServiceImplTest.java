@@ -160,7 +160,7 @@ class QuestionServiceImplTest {
     }
 
     @Test
-    public void getQuestionsByIdTest2() {
+    void getQuestionsByIdTest2() {
         // Create a list of question IDs for testing
         List<Integer> questionIds = Arrays.asList(1, 2, 3);
 

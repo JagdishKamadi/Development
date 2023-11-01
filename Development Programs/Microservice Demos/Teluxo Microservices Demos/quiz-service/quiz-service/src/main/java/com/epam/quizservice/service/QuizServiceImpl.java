@@ -50,6 +50,4 @@ public class QuizServiceImpl implements QuizService {
     public ResponseEntity<Long> submitQuizAndGetScore(String quizTitle, List<AnswerResponse> responses) {
         return questionService.getScore(responses);
     }
-
-
 }

@@ -25,12 +25,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class EmployeeControllerTest {
 
-    @MockBean
-    private EmployeeService employeeService;
-
-    @InjectMocks
-    private EmployeeController employeeController;
-
     @Autowired
     private MockMvc mockMvc;
 
