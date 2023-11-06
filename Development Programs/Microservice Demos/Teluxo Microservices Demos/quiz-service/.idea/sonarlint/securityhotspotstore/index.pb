@@ -17,3 +17,9 @@ z
 Jquiz-service/src/main/java/com/epam/quizservice/feign/QuestionService.java,c\3\c35c75c86f2ccce5562d018444d253d7808bffd7
 x
 Hquiz-service/src/main/java/com/epam/quizservice/service/QuizService.java,f\1\f19cfe364a499eec3d6831f5f0d242eb08a98a15
+|
+Lquiz-service/src/test/java/com/epam/quizservice/service/QuizServiceTest.java,d\7\d7d0647216f0b424da9a82a23c5f1046d4ede8c1
+y
+Iquiz-service/src/main/java/com/epam/quizservice/model/AnswerResponse.java,7\5\75958a94af670748b708b8184a7149075994c517
+‚
+Rquiz-service/src/test/java/com/epam/quizservice/controller/QuizControllerTest.java,9\b\9b7b904797215336944414140048d9ab670b598a
