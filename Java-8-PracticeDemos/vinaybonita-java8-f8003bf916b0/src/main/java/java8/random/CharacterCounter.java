@@ -1,10 +1,7 @@
 package java8.random;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 

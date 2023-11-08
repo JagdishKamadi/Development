@@ -6,8 +6,9 @@ public class Client {
 
     public static void main(String[] args) {
         int[] array = {21, 12, 33, 4, 5};
-        Sorter sorter = new Sorter(new BubbleSort());
+        Sorter sorter = new Sorter(new SelectionSort());
         sorter.sort(array);
+
 
         System.out.println(Arrays.toString(array));
     }

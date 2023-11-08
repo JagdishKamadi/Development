@@ -155,6 +155,9 @@ public class OrdersTest {
         // Exercise 16 — Get the most expensive product price in each category
         System.out.println("\n\nExercise 16 — Get the most expensive product by category");
         // TODO:
+        products.stream()
+                .collect(Collectors.groupingBy(Product::getCategory, Collectors.maxBy(Comparator.comparing(Product::getPrice))))
+                .forEach((category, product) -> System.out.println(category + ":" + product.orElse(null).getPrice()));
 
     }
 
