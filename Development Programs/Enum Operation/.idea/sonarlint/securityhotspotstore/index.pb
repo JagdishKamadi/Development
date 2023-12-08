@@ -7,3 +7,13 @@ G
 EnumDemo4/src/Main.java,0\6\0606802d1e6da9f365b87a0ccc53e46f1c42bab6
 F
 EnumDemo4/src/Day.java,f\9\f94bcd65c055bda448fdf1483c009444a12d8a04
+G
+EnumDemo2/src/Main.java,4\d\4d5c7ced28c6b4f0682228b1a304f998ddc7c7b2
+I
+EnumDemo2/src/Planet.java,c\d\cd118f34b38431e79ccda30ccc6af61ea48191c7
+G
+EnumDemo5/src/Card.java,f\2\f28cf7c4a9889449edc7ecb58785c8d0960f69ad
+I
+EnumDemo5/src/Scheme.java,8\f\8f7b6f64f85774208210d18e8d46238ff35e8231
+G
+EnumDemo5/src/Main.java,6\b\6b591a0f86a9d3951115918f54ebd2fdce96cf59
