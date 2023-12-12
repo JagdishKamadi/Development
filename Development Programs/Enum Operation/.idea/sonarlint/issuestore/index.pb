@@ -17,3 +17,9 @@ I
 EnumDemo5/src/Scheme.java,8\f\8f7b6f64f85774208210d18e8d46238ff35e8231
 G
 EnumDemo5/src/Main.java,6\b\6b591a0f86a9d3951115918f54ebd2fdce96cf59
+V
+&EnumDemo5/src/simple_example/Card.java,d\c\dc124be04000c6f480ff34c189e34d722bb4a1ea
+X
+(EnumDemo5/src/simple_example/Scheme.java,b\3\b34a82715107e68538cc32a95baf058a2770032e
+Z
+*EnumDemo5/src/complex_example/Gateway.java,1\c\1c42ee07da4ecd62a90ac617083726265d0c2125

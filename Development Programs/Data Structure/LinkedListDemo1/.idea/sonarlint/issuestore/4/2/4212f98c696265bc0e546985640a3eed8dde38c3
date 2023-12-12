@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+R
+java:S2589Z"7Remove this expression which always evaluates to "true"(Ÿ¹ö¾ÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÎÝŠ£
+Y
+java:S18549">Remove this useless assignment to local variable "deleteNode".(‰£œõúÿÿÿÿ
+E	java:S106Y"+Replace this use of System.out by a logger.(µŸÞ…þÿÿÿÿ
+E	java:S106["+Replace this use of System.out by a logger.(×·²Âüÿÿÿÿ
+@	java:S106a"+Replace this use of System.out by a logger.(÷ä´¶
+E	java:S106c"+Replace this use of System.out by a logger.(Âû¯Ðüÿÿÿÿ
