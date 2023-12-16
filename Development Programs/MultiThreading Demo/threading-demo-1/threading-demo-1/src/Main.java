@@ -15,6 +15,6 @@ public class Main {
         // to see the priority
         System.out.println(myThread.getPriority());
         System.out.println(thread.getPriority());
-
+        
     }
 }
