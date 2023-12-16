@@ -1,0 +1,11 @@
+
+n
+java:S1104"QMake empId a static final constant or non-public and provide accessors if needed.(”²”ç8íİšÇ1
+m
+java:S1104"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾8¡ƒİšÇ1
+s
+java:S1104"VMake technology a static final constant or non-public and provide accessors if needed.(šÌú8¥ƒİšÇ1
+t
+java:S1104"RMake salary a static final constant or non-public and provide accessors if needed.(üø©»ùÿÿÿÿ8¦ƒİšÇ1
+0
+java:S1220""Move this file to a named package.

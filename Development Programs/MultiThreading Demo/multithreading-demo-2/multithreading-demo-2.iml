@@ -5,10 +5,10 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="corretto-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="fff0c44f-c609-4eee-8f18-597f73d163a7" />
+    <option name="uniqueId" value="9021bf4d-8708-4605-9875-802a4d355f6f" />
   </component>
 </module>
