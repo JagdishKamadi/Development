@@ -23,26 +23,31 @@ public class ToXMLCollector implements Collector<Employee, StringBuffer, String>
 
     @Override
     public Supplier<StringBuffer> supplier() {
+        System.out.println("supplier ");
         return StringBuffer::new;
     }
 
     @Override
     public BiConsumer<StringBuffer, Employee> accumulator() {
+        System.out.println("accumulator");
         return (sb, e) -> sb.append(String.format(XMLSTR, e.empId, e.name, e.technology, e.salary));
     }
 
     @Override
     public BinaryOperator<StringBuffer> combiner() {
+        System.out.println("combiner");
         return (sb1, sb2) -> sb1.append(sb2.toString());
     }
 
     @Override
     public Function<StringBuffer, String> finisher() {
+        System.out.println("finisher");
         return sb -> String.format("<employees> %s \n</employees>", sb.toString());
     }
 
     @Override
     public Set<Characteristics> characteristics() {
+        System.out.println("characteristics");
         return EnumSet.of(CONCURRENT);
     }
 }
