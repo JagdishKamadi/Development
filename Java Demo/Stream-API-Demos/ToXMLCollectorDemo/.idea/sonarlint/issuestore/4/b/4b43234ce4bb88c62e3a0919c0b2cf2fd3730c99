@@ -1,0 +1,12 @@
+
+7
+java:S1220""Move this file to a named package.8½ÈíšÇ1
+O
+java:S6126"2Replace this String concatenation with Text block.(ô­ûç8êÈíšÇ1
+L	java:S106"+Replace this use of System.out by a logger.(ù¦úğùÿÿÿÿ8«ğé´Ç1
+G	java:S106 "+Replace this use of System.out by a logger.(·Èû„8®ğé´Ç1
+F	java:S106&"+Replace this use of System.out by a logger.(ÒÀß[8ºÂê´Ç1
+G	java:S106,"+Replace this use of System.out by a logger.(²Ÿç¸8±”ë´Ç1
+s
+java:S3457-"Q%n should be used in place of \n to produce the platform-specific line separator.(›„áƒûÿÿÿÿ8úÑûšÇ1
+L	java:S1062"+Replace this use of System.out by a logger.(óí‡åüÿÿÿÿ8ºíë´Ç1

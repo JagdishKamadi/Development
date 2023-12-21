@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/06- Java8.iml" filepath="$PROJECT_DIR$/.idea/06- Java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.lambda/com.lambda.iml" filepath="$PROJECT_DIR$/com.lambda/com.lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.stream.optional/com.stream.optional.iml" filepath="$PROJECT_DIR$/com.stream.optional/com.stream.optional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.stream.product/com.stream.product.iml" filepath="$PROJECT_DIR$/com.stream.product/com.stream.product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.stream.trader.transaction/com.stream.trader.transaction.iml" filepath="$PROJECT_DIR$/com.stream.trader.transaction/com.stream.trader.transaction.iml" />
+    </modules>
+  </component>
+</project>
