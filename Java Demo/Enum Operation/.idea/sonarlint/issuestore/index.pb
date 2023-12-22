@@ -12,10 +12,6 @@ G
 I
 EnumDemo2/src/Planet.java,c\d\cd118f34b38431e79ccda30ccc6af61ea48191c7
 G
-EnumDemo5/src/Card.java,f\2\f28cf7c4a9889449edc7ecb58785c8d0960f69ad
-I
-EnumDemo5/src/Scheme.java,8\f\8f7b6f64f85774208210d18e8d46238ff35e8231
-G
 EnumDemo5/src/Main.java,6\b\6b591a0f86a9d3951115918f54ebd2fdce96cf59
 V
 &EnumDemo5/src/simple_example/Card.java,d\c\dc124be04000c6f480ff34c189e34d722bb4a1ea

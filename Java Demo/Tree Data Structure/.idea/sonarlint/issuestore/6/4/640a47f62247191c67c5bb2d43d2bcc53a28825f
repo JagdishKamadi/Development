@@ -1,0 +1,9 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(¸©’Ä8ÿï¥‰É1
+@	java:S106+"+Replace this use of System.out by a logger.(ë¢‹
+@	java:S106>"+Replace this use of System.out by a logger.(ë¢‹
+@	java:S106Q"+Replace this use of System.out by a logger.(ë¢‹
+E	java:S106e"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+E	java:S106m"+Replace this use of System.out by a logger.(…‚‹Æüÿÿÿÿ
+R
+java:S2696„"6Make the enclosing method "static" or remove this set.(ëæûÿÿÿÿÿ

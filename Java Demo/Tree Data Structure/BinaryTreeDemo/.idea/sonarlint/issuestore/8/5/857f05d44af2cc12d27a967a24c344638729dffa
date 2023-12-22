@@ -1,0 +1,8 @@
+
+G	java:S106+"+Replace this use of System.out by a logger.(ë¢‹8Ëè‚É1
+G	java:S106>"+Replace this use of System.out by a logger.(ë¢‹8…Ëè‚É1
+G	java:S106Q"+Replace this use of System.out by a logger.(ë¢‹8ˆËè‚É1
+L	java:S106e"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8‹Ëè‚É1
+L	java:S106m"+Replace this use of System.out by a logger.(…‚‹Æüÿÿÿÿ8ŒËè‚É1
+Y
+java:S2696„"6Make the enclosing method "static" or remove this set.(ëæûÿÿÿÿÿ8Ëè‚É1
