@@ -1,19 +1,0 @@
-
-J
-java:S3740"/Provide the parametrized type for this generic.(Á©±åúÿÿÿÿ
-J
-java:S3740,"/Provide the parametrized type for this generic.(Á©±åúÿÿÿÿ
-t
-java:S1450"YRemove the "calculator" field and declare it as a local variable in the relevant methods.(§¥Ç‰ûÿÿÿÿ
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Ðµ­
-N
-java:S1874"3Remove this use of "newInstance"; it is deprecated.(¾×Øáùÿÿÿÿ
-B
-java:S3011",This accessibility update should be removed.(Ó«§¯
-h	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃûÛÈùÿÿÿÿ
-N
-java:S1874-"3Remove this use of "newInstance"; it is deprecated.(¾×Øáùÿÿÿÿ
-B
-java:S3011/",This accessibility update should be removed.(Ó«§¯
-I
-java:S1068".Remove this unused "calculator" private field.(§¥Ç‰ûÿÿÿÿ

@@ -1,9 +1,0 @@
-
-0
-java:S1220""Move this file to a named package.
-O
-java:S2274":Remove this call to "wait" or move it into a "while" loop.(ç£ŠM
-S	java:S106"9Replace this use of System.out or System.err by a logger.(øöÛŠþÿÿÿÿ
-V
-java:S2274":Remove this call to "wait" or move it into a "while" loop.(ç£ŠM8áùÈçÎ0
-N	java:S106"9Replace this use of System.out or System.err by a logger.(‰’¢ß

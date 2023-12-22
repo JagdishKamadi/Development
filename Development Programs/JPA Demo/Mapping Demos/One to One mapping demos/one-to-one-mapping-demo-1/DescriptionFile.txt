@@ -1,1 +1,0 @@
-Project implemented with JPA
