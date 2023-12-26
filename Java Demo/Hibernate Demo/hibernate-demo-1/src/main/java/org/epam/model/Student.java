@@ -21,4 +21,6 @@ public class Student {
     private Integer id;
     private String firstName;
     private String lastName;
+
+    private Address address;
 }

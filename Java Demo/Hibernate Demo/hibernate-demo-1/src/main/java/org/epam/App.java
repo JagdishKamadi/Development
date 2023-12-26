@@ -1,5 +1,6 @@
 package org.epam;
 
+import org.epam.model.Address;
 import org.epam.model.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -11,6 +12,14 @@ public class App {
         Student student = new Student();
         student.setFirstName("Jagdish");
         student.setLastName("Kamadi");
+
+        Address address = Address.builder()
+                .place("Pawani")
+                .landmark("Near water tank")
+                .pinCode("442304")
+                .build();
+
+        student.setAddress(address);
 
         // make the configuration first
         Configuration config = new Configuration()
