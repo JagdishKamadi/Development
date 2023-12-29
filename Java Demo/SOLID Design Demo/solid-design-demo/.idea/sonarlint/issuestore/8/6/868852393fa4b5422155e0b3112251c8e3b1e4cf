@@ -1,0 +1,14 @@
+
+O
+java:S1172"-Remove this unused method parameter "amount".(¤—ÄŠþÿÿÿÿ8¼½Î«Ë1
+W
+java:S1172"5Remove this unused method parameter "withdrawAmount".(à¶Ì‰ýÿÿÿÿ8Á½Î«Ë1
+G	java:S106"+Replace this use of System.out by a logger.(º²‰Ž8Æ½Î«Ë1
+i
+java:S1871"LThis branch's code block is the same as the block for the branch on line 17.(¾èÓù8ë½Î«Ë1
+h
+java:S1871"LThis branch's code block is the same as the block for the branch on line 17.(åéÓ,8ê½Î«Ë1
+J	java:S108")Either remove or fill this block of code.(¸ØÇ¬ÿÿÿÿÿ8õ½Î«Ë1
+D	java:S108")Either remove or fill this block of code.(åéÓ,8ø½Î«Ë1
+E	java:S108")Either remove or fill this block of code.(¾èÓù8û½Î«Ë1
+E	java:S108")Either remove or fill this block of code.(­Ÿ’ü8íâÐ«Ë1
