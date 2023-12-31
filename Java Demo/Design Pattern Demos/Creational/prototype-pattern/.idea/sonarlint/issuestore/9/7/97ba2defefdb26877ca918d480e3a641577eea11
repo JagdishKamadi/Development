@@ -1,0 +1,13 @@
+
+n
+java:S1104"QMake width a static final constant or non-public and provide accessors if needed.(øÂ½8¼Ù‘ğË1
+o
+java:S1104"RMake height a static final constant or non-public and provide accessors if needed.(ñ½8½Ù‘ğË1
+0
+java:S1220""Move this file to a named package.
+m
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(Ÿô’Ÿ8ÆÙ‘ğË1
+p
+java:S2975"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(û˜úƒ8ÌÙ‘ğË1
+e
+java:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(û˜úƒ8ÎÙ‘ğË1
