@@ -1,0 +1,12 @@
+
+s
+java:S1104
+"QMake books a static final constant or non-public and provide accessors if needed.(Ÿü•¯üÿÿÿÿ8Ù¹š£Ì1
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Õ†‡üÿÿÿÿ8è¹š£Ì1
+I
+java:S1602!",Remove useless curly braces around statement(´Š¸ã8õ¹š£Ì1
+u
+java:S2975/"SRemove this "clone" implementation; use a copy constructor or copy factory instead.(è¹‚ôúÿÿÿÿ8ú¹š£Ì1
+j
+java:S1182/"HUse super.clone() to create and seed the cloned instance to be returned.(è¹‚ôúÿÿÿÿ8€ºš£Ì1
