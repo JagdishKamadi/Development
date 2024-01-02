@@ -1,0 +1,60 @@
+package com.epam.de.genesis.pss.lcip;
+
+public class BinaryTreeNode<V> implements TreeNode<V> {
+    private V value;
+    private TreeNode<V> left;
+    private TreeNode<V> right;
+
+    public BinaryTreeNode(V value, TreeNode<V> left, TreeNode<V> right) {
+        this.value = value;
+        this.left = left;
+        this.right = right;
+    }
+
+    @Override
+    public V getValue() {
+        return value;
+    }
+
+    @Override
+    public TreeNode<V> getLeft() {
+        return left;
+    }
+
+    @Override
+    public TreeNode<V> getRight() {
+        return right;
+    }
+}
+
+
+package com.epam.de.genesis.pss.lcip;
+
+public class BinaryTreeMaxPathSum implements BinaryTreeMaximumPathSum {
+    private int maxSum = Integer.MIN_VALUE;
+
+    @Override
+    public int maxPathSum(TreeNode<Integer> root) {
+        maxPathSumValue(root);
+        return maxSum;
+    }
+
+    private int maxPathSumValue(TreeNode<Integer> node) {
+        if( node == null )
+            return 0;
+        int leftMax = Math.max(0, maxPathSumValue(node.getLeft()));
+        int rightMax = Math.max(0, maxPathSumValue(node.getRight()));
+        maxSum = Math.max(maxSum, node.getValue() + leftMax + rightMax);
+        return node.getValue() + Math.max(leftMax, rightMax);
+    }
+}
+
+
+package com.epam.de.genesis.pss.lcip;
+
+public class BinaryMaximumPathSumBuilder {
+    public BinaryTreeMaximumPathSum build() {
+        //Implement it properly to instantiate the implementation of BinaryTreeMaximumPathSum interface
+        return new BinaryTreeMaxPathSum();
+    }
+}
