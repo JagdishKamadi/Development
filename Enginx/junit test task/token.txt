@@ -1,0 +1,5 @@
+squ_c08ad2c872e908b1cca1842dfb9a8f3d1383fc5f
+
+mvn clean verify sonar:sonar -Dsonar.login=squ_c08ad2c872e908b1cca1842dfb9a8f3d1383fc5f
+
+./gradlew clean build sonarqube -Dsonar.login=squ_c08ad2c872e908b1cca1842dfb9a8f3d1383fc5f
