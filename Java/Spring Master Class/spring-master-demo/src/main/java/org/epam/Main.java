@@ -1,15 +1,15 @@
 package org.epam;
 
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
 
 
     public static void main(String[] args) {
 
-        var context = new ClassPathXmlApplicationContext("config.xml");
-        Doctor doctor = context.getBean("doctor", Doctor.class);
+        var context = new AnnotationConfigApplicationContext(BeanConfig.class);
+        Doctor doctor = context.getBean("doctorBean", Doctor.class);
         doctor.assist();
     }
 }

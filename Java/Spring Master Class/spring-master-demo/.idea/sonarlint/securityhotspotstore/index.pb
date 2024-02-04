@@ -9,3 +9,5 @@ R
 "src/main/java/org/epam/Doctor.java,2\2\22d41577efe17b74676618e0178a45fbffc27df2
 W
 'src/main/java/org/epam/HelpService.java,d\7\d703e7371f80df49d238044465e19cd7c949f671
+V
+&src/main/java/org/epam/BeanConfig.java,a\e\ae48b9bafe8db160773dc4ffb38f1e1830a3f9a4
